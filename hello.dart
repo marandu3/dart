@@ -31,8 +31,16 @@ void main() {
     print("$month month");
   }
 
-  var numbers = [1, 2, 3, 4, 5, 6,7,8,9,10];
+  var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   for (var number in numbers) {
     print(number);
   }
+
+  int addition(int? number1, int? number2) {
+    return number1! + number2!;
+  }
+
+  int sum = addition(2, 3);
+
+  print(sum);
 }
