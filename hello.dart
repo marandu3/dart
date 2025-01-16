@@ -43,4 +43,18 @@ void main() {
   int sum = addition(2, 3);
 
   print(sum);
+
+  var list = ['a', 'b', 'c', 'd', 'e'];
+
+  var uppercase = list.map((item) => {item.toUpperCase()});
+
+  print(uppercase);
+  for (var alpa in uppercase) {
+    print(alpa);
+  }
+
+  String fullname = "marandu";
+  for (var letter in fullname.split("")){
+    print(letter);
+  }
 }
