@@ -54,7 +54,27 @@ void main() {
   }
 
   String fullname = "marandu";
-  for (var letter in fullname.split("")){
+  for (var letter in fullname.split("")) {
     print(letter);
+  }
+
+  String fname = "John";
+  String lastname = "Doe";
+  var myname1 = myname(fname, lastname);
+
+  myname1.display();
+  
+}
+
+class myname {
+  var _fname;
+  var lastname;
+
+  myname(this._fname, this.lastname);
+
+
+
+  void display() {
+    return print("my name is $_fname $lastname");
   }
 }
